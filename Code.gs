@@ -1,16 +1,22 @@
 /*
 
-A Google Apps script to extract Google Calendar entry notes, and send them to Evernote.  Install in your Google Drive, with Create>More>Script.  
+A Google Apps script to extract Google Calendar entry notes, and send them to Evernote.  Install in your Google Drive, 
+with Create>More>Script.  
 
-You can change existing Google Calendar entry notes and the script will detect that, and send an updated entry to Evernote, which you can Merge with existing entries.
+You can change existing Google Calendar entry notes and the script will detect that, and send an updated entry to 
+Evernote, which you can Merge with existing entries.
 
 NOTES:
 
 a) The first time the script runs, it configures itself.
 b) Configure it to run on some sane time schedule (every 15 minutes, perhaps), with Resources>All your triggers.
-c) It will only look at calendar entries between (now-daystoscan/2) to (now+daystoscan/2).  daystoscan is set to 14 days by default
-d) It will only look at your default calendar, by default.  To make it look at a different calendar, edit the User Properties (File>Project Properties>User properties)
-e) Once it has configured itself and created the log spreadsheet, DO NOT delete that spreadsheet.  If you do, you need to also delete the User Property "CalendartoEvernoteLogId".  Then running it again will make it reconfigure and recreate a log sheet.
+c) It will only look at calendar entries between (now-daystoscan/2) to (now+daystoscan/2).  daystoscan is set to 14 
+   days by default
+d) It will only look at your default calendar, by default.  To make it look at a different calendar, edit the User 
+   Properties (File>Project Properties>User properties)
+e) Once it has configured itself and created the log spreadsheet, DO NOT delete that spreadsheet.  If you do, you need 
+   to also delete the User Property "CalendartoEvernoteLogId".  Then running it again will make it reconfigure and 
+   recreate a log sheet.
 
 */
 
